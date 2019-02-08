@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
 
         private void MessageBox_Error()
         {
-            string message = "Somethig gone wrong, do you want try again";
+            string message = "Somethig gone wrong, do you want try again?";
             string caption = "Error Detected in Input";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             DialogResult result;
@@ -54,9 +54,7 @@ namespace WindowsFormsApplication1
                         ferenheit_textBox.Text = Convert.ToString(Math.Round(1.8 * value + 32, 2));
                     }
                     else
-                    {
                         MessageBox_Error();
-                    }
                 }
                 catch (FormatException)
                 {
